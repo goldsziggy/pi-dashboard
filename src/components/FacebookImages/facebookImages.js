@@ -1,7 +1,7 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-09 05:07:13
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 
 'use strict';
@@ -16,13 +16,15 @@ import Slider from 'react-slick'
 export default class FacebookImages extends React.Component {
   render(){
     const {photos, error} = this.props;
+    const slidesToShow = this.props.slidesToShow ? this.props.slidesToShow : 5;
+    const slidesToScroll = this.props.slidesToScroll ? this.props.slidesToScroll : 1;
     var settings = {
       dots: false,
       infinite: true,
       speed: 50,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      autoplay: true
+      autoplay: true,
+      slidesToShow,
+      slidesToScroll
     };
     return (
       <div className='row'>

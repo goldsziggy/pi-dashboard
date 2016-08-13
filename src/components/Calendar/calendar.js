@@ -1,7 +1,7 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-03 20:07:29
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 
 import React from 'react';
@@ -21,7 +21,7 @@ export default class Calendar extends React.Component {
       <div className='collapse row'>
         <div className='columns medium-12'>
         { src && src.length > 0 ?
-          <div src={src} className='calendar' id='calendar' frameBorder="0" scrolling="no"></div>
+          <iframe src={src} className='calendar' id='calendar' frameBorder="0" scrolling="no"></iframe>
           : 
           <div className='calendar'>
             <BigCalendar
@@ -49,7 +49,10 @@ export default class Calendar extends React.Component {
   }
 
   poll() {
-    this.props.actions.onRequestGoogleEvents();
+    if(!this.props.src || this.props.src.length === 0)
+      this.props.actions.onRequestGoogleEvents();
+    else 
+      setState();
   }
   componentDidMount(){
     this.props.actions.onRequestGoogleEvents();

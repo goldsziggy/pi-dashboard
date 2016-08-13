@@ -1,7 +1,7 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-03 17:50:19
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 import React from 'react'
 import Header from '../Header/header';
@@ -37,7 +37,7 @@ export default class App extends React.Component {
       <div>
         {/*<Header />*/}
         <Time refreshRate={config.timer.secondly} />
-        <Calendar refreshRate={config.timer.tenMinutes }/>
+        <Calendar refreshRate={config.timer.tenMinutes} src={config.calendar.src}/>
         
         <FacebookImages />
         <div className='row'>

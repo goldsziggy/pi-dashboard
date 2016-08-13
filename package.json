@@ -58,6 +58,8 @@
     "react-big-calendar": "^0.10.3",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
+    "react-router": "^2.6.1",
+    "react-router-redux": "^4.0.5",
     "react-skycons": "^0.3.0",
     "react-slick": "^0.12.2",
     "redux": "^3.5.2",

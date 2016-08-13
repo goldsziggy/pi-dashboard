@@ -1,14 +1,15 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-06 06:10:32
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 
 'use strict';
 const config = {
   calendar: {
     gmailPrivateIcal: '', //your private personal ical URL
-    holidayIcal: 'https://calendar.google.com/calendar/ical/en.usa%23holiday%40group.v.calendar.google.com/public/basic.ics' // googles public ical for holidays
+    holidayIcal: 'https://calendar.google.com/calendar/ical/en.usa%23holiday%40group.v.calendar.google.com/public/basic.ics', // googles public ical for holidays
+    src: '' // if you plan on using an IFRAME go down this route.
   },
   quote: {
     src: '//quotes.rest/qod.json' //Public URL of a daily Quote API
