@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "babel-cli": "^6.11.4",
-    "babel-plugin-object-assign": "^1.2.1",
+    "babel-plugin-transform-object-assign": "^6.8.0",
     "body-parser": "^1.15.2",
     "change-case": "^3.0.0",
     "dateformat": "^1.0.12",
