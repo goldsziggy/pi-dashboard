@@ -3,7 +3,6 @@
 * @Date:   2016-08-03 20:01:59
 * @Last Modified by:   Matthew Zygowicz
 */
-
 import fetch from 'isomorphic-fetch';
 import webpack from 'webpack';
 import webpackDevMiddleware from 'webpack-dev-middleware';
