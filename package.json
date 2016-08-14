@@ -4,9 +4,10 @@
   "description": "My calendar/home-dashboard for my raspberry pi",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js --exec babel-node",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --progress --colors"
+    "start": "nodemon src/server/server.js --exec babel-node",
+    "build": "babel src -d dist",
+    "serve": "node dist/server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matthew Zygowicz",
   "license": "ISC",

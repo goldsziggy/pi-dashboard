@@ -1,7 +1,7 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-03 17:37:07
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 
 var webpack = require('webpack')
@@ -9,7 +9,8 @@ var path = require('path')
 var autoprefixer = require('autoprefixer')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-var APP_DIR = path.join(__dirname, './src');
+var APP_DIR = path.join(__dirname, '../../src');
+console.log(APP_DIR);
 
 var assetPath = '/assets/'
 var absolutePath = path.join(__dirname, 'dist', assetPath)
@@ -18,7 +19,7 @@ var absolutePath = path.join(__dirname, 'dist', assetPath)
 //https://github.com/timaschew/react-redux-foundation-boilerplate/blob/master/webpack.config.js
 module.exports = {
     devtool: 'source-map',
-    entry: ['webpack-hot-middleware/client',"./src/entry.js"],
+    entry: ['webpack-hot-middleware/client',path.join(__dirname, '../client/entry.js')],
     output: {
         path: absolutePath,
         filename: "bundle.js",

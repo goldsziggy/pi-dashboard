@@ -1,7 +1,7 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-03 20:01:59
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 
 import fetch from 'isomorphic-fetch';
@@ -14,14 +14,15 @@ import bodyParser from 'body-parser';
 import moment from 'moment';
 import ical from 'ical';
 import express from 'express';
+import path from 'path';
 
-import appConfig from './src/config/config';
+import appConfig from '../config/config';
 
 //import services
-import icalService from './server/routes/ical';
-import redditService from './server/routes/reddit';
-import weatherService from './server/routes/weather';
-import facebookService from './server/routes/facebook';
+import icalService from './routes/ical';
+import redditService from './routes/reddit';
+import weatherService from './routes/weather';
+import facebookService from './routes/facebook';
 
 let app = new express()
 const port = process.env.WEBPACK_PORT || 3000
@@ -45,7 +46,7 @@ app.get('/facebook', facebookService);
 
 
 app.use(function(req, res) {
-  res.sendFile(__dirname + '/dist/index.html')
+  res.sendFile(path.resolve('src/client/index.html'))
 })
 
 

@@ -1,11 +1,11 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-04 18:35:20
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 
 import fetch from 'isomorphic-fetch'
-import config from '../../config/config';
+import config from '../../../config/config';
 
 export const REQUEST_QUOTE = 'quote.REQUEST_QUOTE';
 export const SUCCESS_QUOTE = 'quote.SUCCESS_QUOTE';

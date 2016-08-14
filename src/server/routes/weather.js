@@ -1,11 +1,11 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-11 20:02:35
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 
 import Forecast from 'forecastio';
-import appConfig from '../../src/config/config';
+import appConfig from '../../config/config';
 
 
 let forecastOptions = {

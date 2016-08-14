@@ -13,7 +13,7 @@ import Reddit from '../Reddit/reddit';
 import FacebookImages from '../FacebookImages/facebookImages';
 
 //load config
-import config from '../../config/config';
+import config from '../../../config/config';
 
 //load css
 import '../../styles/index.scss'

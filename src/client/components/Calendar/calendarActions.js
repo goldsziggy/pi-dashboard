@@ -1,12 +1,12 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-06 05:56:54
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 // import GoogleStrategy from 'passport-google-oauth'
 // var GoogleStrategy = requigoogleper
 // import ical from 'ical';s
-import config from '../../config/config';
+import config from '../../../config/config';
 import fetch from 'isomorphic-fetch';
 
 export const REQUEST_GOOGLE_EVENTS = 'calendar.REQUEST_GOOGLE_EVENTS';

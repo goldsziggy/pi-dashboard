@@ -12,7 +12,7 @@ import { Provider } from 'react-redux'
 import { Router, Route, browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 import App from './components/App/app'
-import PhotoPage from './components/PhotoPage/photoPage';
+import PhotoPage from './components/Photopage/photoPage';
 import CalendarPage from './components/CalendarPage/calendarPage';
 import configureStore from './store/configureStore';
 

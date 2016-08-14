@@ -1,13 +1,13 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-09 05:07:24
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 
 'use strict';
 
 
-import config from '../../config/config';
+import config from '../../../config/config';
 
 export const REQUEST_IMAGES = 'facebookImages.REQUEST_IMAGES';
 export const SUCCESS_IMAGES = 'facebookImages.SUCCESS_IMAGES';

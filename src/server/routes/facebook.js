@@ -1,11 +1,11 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-11 20:12:04
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 
 import fetch from 'isomorphic-fetch';
-import appConfig from '../../src/config/config';
+import appConfig from '../../config/config';
 
 /**
  * This service utilizes the service I built node-facebook-photo-scraper

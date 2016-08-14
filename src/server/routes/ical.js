@@ -1,7 +1,7 @@
 // /*
 // * @Author: ziggy
 // * @Date:   2016-08-07 11:59:24
-// * @Last Modified by:   ziggy
+// * @Last Modified by:   Matthew Zygowicz
 // */
 // 
 // 
@@ -9,7 +9,7 @@
 import {RRule} from 'rrule';
 import moment from 'moment';
 import ical from 'ical';
-import appConfig from '../../src/config/config';
+import appConfig from '../../config/config';
 
 let events = [];
 moment.locale('us');

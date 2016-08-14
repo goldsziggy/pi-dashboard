@@ -1,11 +1,11 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-09 19:58:53
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 
 import fetch from 'isomorphic-fetch';
-import config from '../../config/config';
+import config from '../../../config/config';
 // import Forcast from 'forecast.io';
 
 // const options = {

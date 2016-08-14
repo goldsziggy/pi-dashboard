@@ -1,14 +1,15 @@
 /*
 * @Author: Matthew Zygowicz
-* @Date:   2016-08-13 09:57:10
+* @Date:   2016-08-13 10:05:01
 * @Last Modified by:   Matthew Zygowicz
 */
 
 import React from 'react'
-import FacebookImages from '../FacebookImages/facebookImages';
+import Calendar from '../Calendar/calendar';
+import Time from '../Time/time';
 
 //load config
-import config from '../../config/config';
+import config from '../../../config/config';
 
 //load css
 import '../../styles/index.scss'
@@ -21,12 +22,13 @@ import 'script!foundation-sites'
 import 'script!moment';
 import 'script!fullcalendar'
 
-export default class PhotoPage extends React.Component {
+export default class CalendarPage extends React.Component {
 
   render(){
     return (
       <div className='full-page'>
-        <FacebookImages slidesToShow={1} />
+        <Time refreshRate={config.timer.secondly} />
+        <Calendar refreshRate={config.timer.tenMinutes} src={config.calendar.src}/>
       </div> 
     )
   }
@@ -36,4 +38,4 @@ export default class PhotoPage extends React.Component {
   }
 }
 
-export default PhotoPage
+export default CalendarPage
