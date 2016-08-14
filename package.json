@@ -33,7 +33,9 @@
     "webpack-hot-middleware": "^2.12.2"
   },
   "dependencies": {
+    "babel": "^6.5.2",
     "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
     "babel-plugin-transform-object-assign": "^6.8.0",
     "body-parser": "^1.15.2",
     "change-case": "^3.0.0",
