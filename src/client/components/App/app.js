@@ -45,7 +45,7 @@ export default class App extends React.Component {
             <Reddit refreshRate={config.timer.fourTimesADay} search_term={'news'}/>
           </div>
           <div className='columns medium-4'>
-            {/*<Quote refreshRate={config.timer.daily}/>*/}
+            {<Quote refreshRate={config.timer.daily}/>}
           </div>
           <div className='columns medium-4'>
             <Weather refreshRate={config.timer.hourly}/>
