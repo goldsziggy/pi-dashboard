@@ -1,7 +1,7 @@
 /*
 * @Author: ziggy
 * @Date:   2016-08-04 17:16:26
-* @Last Modified by:   ziggy
+* @Last Modified by:   Matthew Zygowicz
 */
 
 import React from 'react';
@@ -9,7 +9,8 @@ import dateFormat from 'dateformat';
 
 export default class Time extends React.Component {
   render(){
-    const time = dateFormat('h:MM:ss TT');
+    const time_format = this.props.timeFormat ? this.props.timeFormat : 'h:MM TT';
+    const time = dateFormat(time_format);
     const date = dateFormat('dddd mmmm dS, yyyy')
     return (
      <div className='collapse row'>

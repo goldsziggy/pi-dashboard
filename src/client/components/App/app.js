@@ -36,7 +36,7 @@ export default class App extends React.Component {
     return (
       <div>
         {/*<Header />*/}
-        <Time refreshRate={config.timer.secondly} />
+        <Time refreshRate={config.timer.minute} timeFormat={'h:MM TT'}/>
         <Calendar refreshRate={config.timer.tenMinutes} src={config.calendar.src}/>
         
         <FacebookImages />

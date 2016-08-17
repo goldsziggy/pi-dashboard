@@ -14,7 +14,7 @@ import appConfig from '../../config/config';
  * https://github.com/goldsziggy/node-facebook-photo-scraper
  */
 export default function facebookService(req, res){
-  fetch(appConfig.facebook.customServiceURL)
+  fetch(appConfig.facebook.customServiceURL+"?limit=100")
       .then((response)=>{
         if (!response.ok) {
             const error = new Error(response.statusText);
